@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: rgb(136, 0, 255);
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.666);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #user, #maq {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        #imgUser, #imgMaq {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #9d00ff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #6800b3;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #b6bec7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #788390;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="back-btn" onclick="goBack()" role="button">Regresar</button>
+    <div id="container">
+        <div id="user">Jugador: </div>
+        <img id="imgUser" src="" alt="Opción seleccionada por el jugador" />
+        <div id="maq">Máquina: </div>
+        <img id="imgMaq" src="" alt="Opción seleccionada por la máquina" />
+        <div id="message"></div>
+        <button id="btnPlay">Jugar</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script src="./scissors.js" defer></script>
+</body>
+</html>
