@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider para RGB</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container div {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Selecciona las proporciones</h2>
+        <div>
+            <label for="sliderRojo">Rojo: </label>
+            <input type="range" id="sliderRojo" min="0" max="255" value="0">
+        </div>
+        <div>
+            <label for="sliderVerde">Verde: </label>
+            <input type="range" id="sliderVerde" min="0" max="255" value="0">
+        </div>
+        <div>
+            <label for="sliderAzul">Azul: </label>
+            <input type="range" id="sliderAzul" min="0" max="255" value="0">
+        </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
