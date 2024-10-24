@@ -6,6 +6,27 @@
     <title>App de Tareas</title>
     <link rel="stylesheet" href="../todoapp/style.css">
 </head>
+<style>
+    a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: #8000ff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #5f00b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+</style>
 <body>
     <div class="container">
         <div class="form">
@@ -17,6 +38,7 @@
         </div>
         <div class="tareas"></div>
     </div>
+    <a href="/parcial2.html">Menu</a>
     <script src="../todoapp/app.js"></script>
 </body>
 </html>

@@ -9,13 +9,32 @@
             display: grid;
             place-items: center;
             width: 100vw;
-            height: 100vw;
+            height: 100vh;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             background-color: black;
         }
         #lienzo{
             background-color: #5e0d79;
+        }
+        a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: #8000ff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #5f00b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -24,6 +43,7 @@
         <h1>Mi dibujo con canvas y javascript</h1>
         <canvas id="lienzo" width="600" height="400"></canvas>
     </div>
+    <a href="/parcial2.html">Menu</a>
     <script src="../bounce/app.js"></script>
 </body>
 </html>

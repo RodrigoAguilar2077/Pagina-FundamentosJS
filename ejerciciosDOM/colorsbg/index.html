@@ -9,10 +9,32 @@
             width: 100vw;
             height: 100vh;
             display: grid;
-            place-items: center;        }
+            place-items: center;
+
+        a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: #8000ff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #5f00b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        }
     </style>
 </head>
 <body>
+    <a href="/parcial2.html">Menu</a>
     <button id="btnChange">Cambiar Color</button>
     <script src="./app2.js"></script>
 </body>

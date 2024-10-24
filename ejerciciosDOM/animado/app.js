@@ -11,7 +11,7 @@ setInterval(() => {
     // ctx.clearRect(0, 0, 600, 400);
     
     ctx.fillStyle = `hsl(${height}, 50%, 50%)`;
-    ctx.fillRect(x, y , width, height); // Cambia la posición
+    ctx.fillRect(x, y , width, height);
 
     if (crece) {
        width += 6;
